@@ -18,8 +18,8 @@ export const Header = () => {
                     </Link>
                 </div>
                 <div className={styles.nav}>
-                    <Link href='/archive' className={pathname === '/archive' ? styles.activeLink : ''}>ARCHIVE</Link>
-                    <Link href='/mixes' className={pathname === '/mixes' ? styles.activeLink : ''}>MIXES</Link>
+                    <Link href='/archive' className={pathname?.includes('/archive') ? styles.activeLink : ''}>ARCHIVE</Link>
+                    <Link href='/mixes' className={pathname?.includes('/mixes') ? styles.activeLink : ''}>MIXES</Link>
                 </div>
             </div>
         </header>

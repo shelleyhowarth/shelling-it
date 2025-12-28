@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import NeonOutline from '../typography/neon-outline/neon-outline';
 import styles from './event-card.module.css';
+import dayjs from 'dayjs';
+import Link from 'next/link';
 
 interface EventCardProps {
     title: string;
@@ -8,15 +10,20 @@ interface EventCardProps {
     description: string;
     imageUrl: string;
 }
+
 export const EventCard = ({ title, date, description, imageUrl }: EventCardProps) => {
+    const formattedDate = dayjs(date).format('DD.MM.YY');
+
     return (
-        <div className={styles.card}>
-            <div className={styles.imageWrapper}>
-                <Image src={imageUrl} alt={title} fill className={styles.image} />
+        <Link href={`/archive/${title}`}>
+            <div className={styles.card}>
+                <div className={styles.imageWrapper}>
+                    <Image src={imageUrl} alt={title} fill className={styles.image} />
+                </div>
+                <NeonOutline text={title} />
+                <p className={styles.date}>{formattedDate}</p>
             </div>
-            <NeonOutline text={title} />
-            <p>{description}</p>
-        </div>
+        </Link>
     );
 }
 
