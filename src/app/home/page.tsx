@@ -4,7 +4,7 @@ import styles from './home.module.css';
 export default function Home() {
     return (
         <div className={styles.nextEventContainer}>
-            <NextEvent />
+            <NextEvent date={'3 MAY 2026'} venue={'THE DBA, MANCHESTER'} headliner={'TBA'} ticketUrl={'https://ra.co/events/2334586'} />
         </div>
     )
 };
