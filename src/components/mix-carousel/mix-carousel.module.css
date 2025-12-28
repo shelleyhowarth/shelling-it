@@ -1,0 +1,41 @@
+.mainVideoWrapper {
+  max-width: 100%;
+  justify-self: center;
+  margin-top: 20px;
+}
+
+.videoFrame {
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.videoFrame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.carouselContainer {
+  margin-top: 32px;
+}
+
+.thumbnailsWrapper {
+  margin-top: 16px;
+}
+
+.thumbnailImage {
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  height: auto;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+@media (min-width: 500px) {
+  .mainVideoWrapper {
+    margin-top: 32px;
+    max-width: 80%;
+  }
+}

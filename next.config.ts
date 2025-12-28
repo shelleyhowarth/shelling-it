@@ -10,6 +10,11 @@ const nextConfig: NextConfig = {
         hostname: "shelling-it.s3.eu-north-1.amazonaws.com",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "img.youtube.com",
+        pathname: "/**",
+      },
     ],
   },
 };
