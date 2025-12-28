@@ -1,4 +1,4 @@
-.nextEvent {
+.eventRecap {
   padding: 36px;
   border-radius: 18px;
   display: flex;
@@ -17,30 +17,6 @@
 
 .divider {
   border-bottom: 1px solid white;
-}
-
-.ticketsButtonContainer {
-  align-self: center;
-}
-
-.ticketsButton {
-  background-color: white;
-  color: black;
-  padding: 16px 28px;
-  border-radius: 12px;
-  font-weight: 700;
-  font-size: 1.05rem;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.ticketsButton svg {
-  width: 1.4rem;
-  height: 1.4rem;
 }
 
 .heading {
@@ -62,7 +38,7 @@
 }
 
 @media (min-width: 500px) {
-  .nextEvent {
+  .eventRecap {
     flex-direction: row;
   }
 

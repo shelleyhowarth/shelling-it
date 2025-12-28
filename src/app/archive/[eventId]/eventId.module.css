@@ -1,4 +1,8 @@
-.eventRecapContainer {
-  margin-top: 32px;
-  justify-self: center;
+.topContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recapContainer {
+  width: 60%;
 }

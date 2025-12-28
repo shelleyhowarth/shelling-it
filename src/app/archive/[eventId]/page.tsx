@@ -1,7 +1,6 @@
 
 import { EventRecap } from "@/components/event-recap/event-recap";
 import { PageTitle } from "@/components/page-title/page-title";
-import { Gallery } from "react-grid-gallery";
 import styles from "./eventId.module.css";
 interface PageProps {
     params: Promise<{
@@ -14,9 +13,11 @@ export default async function ArchiveEventPage({ params }: PageProps) {
 
     return (
         <>
-            <PageTitle line1={"EVENT"} line2={eventId} />
-            <div className={styles.eventRecapContainer}>
-                <EventRecap />
+            <div className={styles.topContainer}>
+                <PageTitle line1={"EVENT"} line2={eventId} />
+                <div className={styles.recapContainer}>
+                    <EventRecap />
+                </div>
             </div>
         </>
     );
