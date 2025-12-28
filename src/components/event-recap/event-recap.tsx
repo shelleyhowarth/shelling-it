@@ -1,24 +1,30 @@
 import styles from "./event-recap.module.css";
 
-export const EventRecap = () => {
+interface EventRecapProps {
+    date: string;
+    venue: string;
+    lineup: string[];
+}
+
+export const EventRecap = ({ date, venue, lineup }: EventRecapProps) => {
     return (
         <div className={styles.eventRecap}>
             <div id="col-1">
                 <p className={styles.heading}>DATE
                 </p>
-                <p className={styles.copy}>28 NOV 2024</p>
+                <p className={styles.copy}>{date}</p>
             </div>
             <div className={styles.divider} />
             <div id="col-2">
                 <p className={styles.heading}>VENUE
                 </p>
-                <p className={styles.copy}>33 OLDHAM ST, MANCHESTER</p>
+                <p className={styles.copy}>{venue}</p>
             </div>
             <div className={styles.divider} />
             <div id="col-3">
                 <p className={styles.heading}>LINEUP
                 </p>
-                <p className={styles.copy}>SEZBENNY, KACPER PIETA</p>
+                <p className={styles.copy}>{lineup.join(", ")}</p>
                 <p className={styles.info}>+ OTHERS</p>
             </div>
         </div>

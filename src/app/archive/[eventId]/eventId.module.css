@@ -1,8 +1,17 @@
 .topContainer {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.recapContainer {
-  width: 60%;
+@media (min-width: 500px) {
+  .topContainer {
+    gap: 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .recapContainer {
+    width: 60%;
+  }
 }

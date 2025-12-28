@@ -1,11 +1,11 @@
 .eventRecap {
-  padding: 36px;
+  padding: 20px;
   border-radius: 18px;
   display: flex;
-  flex-direction: column;
-  gap: 32px;
+  flex-direction: row;
+  gap: 20px;
   background-color: rgba(9, 9, 9, 0.62);
-  width: fit-content;
+  width: 100%;
   text-align: start;
   position: relative;
   overflow: hidden;
@@ -16,33 +16,43 @@
 }
 
 .divider {
-  border-bottom: 1px solid white;
+  border-right: 1px solid white;
 }
 
 .heading {
-  font-size: 1.2rem;
+  font-size: .8rem;
   font-weight: bolder;
   color: #a552c7;
 }
 
 .copy {
-  font-size: 2.1rem;
+  font-size: 1rem;
   color: white;
   font-weight: bold;
   -webkit-text-stroke: 0.5px lightgray;
 }
 
 .info {
-  font-size: 1rem;
+  font-size: .5rem;
   color: gray;
 }
 
 @media (min-width: 500px) {
   .eventRecap {
-    flex-direction: row;
+    padding: 36px;
+    gap: 32px;
+    width: fit-content;
   }
 
-  .divider {
-    border-right: 1px solid white;
+  .heading {
+    font-size: 1.2rem;
+  }
+
+  .copy {
+    font-size: 2.1rem;
+  }
+
+  .info {
+    font-size: 1rem;
   }
 }
