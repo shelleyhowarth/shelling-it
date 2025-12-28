@@ -1,0 +1,73 @@
+.nextEvent {
+  padding: 36px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background-color: rgba(9, 9, 9, 0.62);
+  width: fit-content;
+  text-align: start;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  backdrop-filter: blur(28px) saturate(140%);
+  -webkit-backdrop-filter: blur(28px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+}
+
+.divider {
+  border-bottom: 1px solid white;
+}
+
+.ticketsButtonContainer {
+  align-self: center;
+}
+
+.ticketsButton {
+  background-color: white;
+  color: black;
+  padding: 16px 28px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.05rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ticketsButton svg {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.heading {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: #a552c7;
+}
+
+.copy {
+  font-size: 2.1rem;
+  color: white;
+  font-weight: bold;
+  -webkit-text-stroke: 0.5px lightgray;
+}
+
+.info {
+  font-size: 1rem;
+  color: gray;
+}
+
+@media (min-width: 500px) {
+  .nextEvent {
+    flex-direction: row;
+  }
+
+  .divider {
+    border-right: 1px solid white;
+  }
+}

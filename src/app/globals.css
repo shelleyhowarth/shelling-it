@@ -1,13 +1,10 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&display=swap");
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --yellow: #d0fe1d;
+  --breakpoint: 500px;
+  --background: #050505;
+  --foreground: #f4f4f4;
 }
 
 html,
@@ -22,6 +19,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 * {
@@ -35,8 +35,54 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.background {
+  position: fixed;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to right, #d0fe1d 1px, transparent 1px),
+    linear-gradient(to bottom, #d0fe1d 1px, transparent 1px);
+  background-size: 48px 48px;
+  pointer-events: none;
+  z-index: 0;
+
+  -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0,
+      #000 5%,
+      #000 95%,
+      transparent 100%
+    ),
+    linear-gradient(
+      to bottom,
+      transparent 0,
+      #000 5%,
+      #000 95%,
+      transparent 100%
+    );
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(
+      to right,
+      transparent 0,
+      #000 5%,
+      #000 95%,
+      transparent 100%
+    ),
+    linear-gradient(
+      to bottom,
+      transparent 0,
+      #000 5%,
+      #000 95%,
+      transparent 100%
+    );
+  mask-composite: intersect;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
+
+.contentContainer {
+  padding: 100px 20px;
 }

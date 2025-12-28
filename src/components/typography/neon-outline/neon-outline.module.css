@@ -1,0 +1,55 @@
+.neonSvg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.neonText {
+  stroke-dasharray: 1400;
+  stroke-dashoffset: 1400;
+  animation: draw-line 4s ease-out infinite;
+  font-family: "Archivo", sans-serif;
+  font-size: 200px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  fill: none;
+  stroke: white;
+  stroke-width: 4px;
+  stroke-linejoin: round;
+  filter: url(#neon-glow);
+  text-anchor: start;
+  dominant-baseline: middle;
+}
+
+.neonTextStatic {
+  animation: none;
+  stroke-dashoffset: 0;
+}
+
+.sizeMedium {
+  font-size: 140px;
+  stroke-width: 3px;
+}
+
+.sizeLarge {
+  font-size: 220px;
+  stroke-width: 5px;
+}
+
+@keyframes draw-line {
+  0% {
+    stroke-dashoffset: 1400;
+  }
+
+  45% {
+    stroke-dashoffset: 0;
+  }
+
+  70% {
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    stroke-dashoffset: 1400;
+  }
+}
