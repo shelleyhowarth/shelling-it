@@ -9,7 +9,6 @@ import "swiper/css";
 import "swiper/css/thumbs";
 
 interface Video {
-    id: string;
     youtubeId: string;
     title: string;
 }
@@ -50,7 +49,7 @@ export default function MixCarousel({ videos }: MixCarouselProps) {
                     spaceBetween={12}
                 >
                     {videos.map((video, index) => (
-                        <SwiperSlide key={video.id}>
+                        <SwiperSlide key={video.title}>
                             <button
                                 onClick={() => mainSwiper?.slideTo(index)}
                                 style={{
