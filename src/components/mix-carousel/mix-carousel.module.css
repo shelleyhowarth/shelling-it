@@ -1,17 +1,22 @@
 .mainVideoWrapper {
   max-width: 100%;
-  justify-self: center;
-  margin-top: 20px;
+  /* justify-self: center; */
+  margin: 20px auto 0; /* ← centers horizontally */
 }
 
 .videoFrame {
-  aspect-ratio: 16 / 9;
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 */
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.15);
+  background: black;
 }
 
 .videoFrame iframe {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   border: 0;
@@ -35,7 +40,7 @@
 
 @media (min-width: 500px) {
   .mainVideoWrapper {
-    margin-top: 32px;
+  margin: 32px auto 0; /* ← centers horizontally */
     max-width: 80%;
   }
 }

@@ -65,7 +65,7 @@ export default function MixCarousel({ videos }: MixCarouselProps) {
                                     alt=""
                                     width={320}
                                     height={180}
-className={styles.thumbnailImage}
+                                    className={styles.thumbnailImage}
                                 />
                             </button>
                         </SwiperSlide>
