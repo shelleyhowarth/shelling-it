@@ -1,0 +1,29 @@
+.skeletonGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.skeleton {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: linear-gradient(
+    90deg,
+    #2c2c2c 25%,
+    #3c3c3c 50%,
+    #2c2c2c 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 4px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}

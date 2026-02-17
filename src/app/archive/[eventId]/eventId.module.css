@@ -4,6 +4,10 @@
   gap: 20px;
 }
 
+.galleryContainer {
+  margin-top: 10%;
+}
+
 @media (min-width: 500px) {
   .topContainer {
     gap: 0;
