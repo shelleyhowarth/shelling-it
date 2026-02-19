@@ -26,7 +26,7 @@ export default async function ArchiveEventPage({ params }: PageProps) {
         const keys = Array.from(
             text.matchAll(/<Key>(.*?)<\/Key>/g),
             match => match[1]
-        );
+        ).filter(key => !key.endsWith("/"));
 
         return keys.map(
             key => `https://shelling-it.s3.amazonaws.com/${key}`
