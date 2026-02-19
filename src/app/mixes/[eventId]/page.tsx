@@ -1,7 +1,7 @@
 import MixCarousel from "@/components/mix-carousel/mix-carousel";
 import { PageTitle } from "@/components/page-title/page-title";
 import { mixEventData } from "./eventId.data";
-import { Helmet } from "react-helmet";
+import Head from "next/head";
 
 interface PageProps {
     params: Promise<{
@@ -14,9 +14,9 @@ export default async function MixEventPage({ params }: PageProps) {
     const videos = mixEventData.find(event => event.id === eventId)?.videos || [];
     return (
         <>
-            <Helmet>
+            <Head>
                 <title>{`${eventId} MIXES | SHELLING.IT`}</title>
-            </Helmet>
+            </Head>
             <PageTitle line1={"EVENT"} line2={eventId} />
             <MixCarousel videos={videos} />
         </>
