@@ -1,14 +1,11 @@
 import styles from './archive.module.css';
 import { EventCard } from '@/components/event-card/event-card';
 import { PageTitle } from '@/components/page-title/page-title';
-import Head from "next/head";
 
 export default function Archive() {
     return (
         <>
-            <Head>
-                <title>ARCHIVE | SHELLING.IT</title>
-            </Head>
+            <title>ARCHIVE | SHELLING.IT</title>
             <PageTitle line1='EVENT' line2='ARCHIVE' />
             <div className={styles.eventsGrid}>
                 <EventCard title='001' date='2024-11-30' description='Description of event 001' imageUrl='https://shelling-it.s3.eu-north-1.amazonaws.com/archive-cards/001' />
