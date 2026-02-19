@@ -7,7 +7,7 @@ export default function Home() {
         <>
             <title>SHELLING.IT</title>
             <div className={styles.logoContainer}>
-                <img src={Logo.src} alt="SHELLING.IT Logo" />
+                <img src={Logo.src} height={'40px'} alt="SHELLING.IT Logo" />
             </div>
 
             <div className={styles.nextEventContainer}>
