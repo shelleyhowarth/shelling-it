@@ -1,9 +1,13 @@
 import { PageTitle } from "@/components/page-title/page-title";
 import styles from './mixes.module.css';
 import { EventCard } from "@/components/event-card/event-card";
+import { Helmet } from "react-helmet";
 
 export default function Mixes() {
     return (<>
+        <Helmet>
+            <title>MIXES | SHELLING.IT</title>
+        </Helmet>
         <PageTitle line1="EVENT" line2="MIXES" />
         <div className={styles.eventsGrid}>
             <EventCard title='001' date='2024-11-30' description='Description of event 001' imageUrl='https://shelling-it.s3.eu-north-1.amazonaws.com/mix-cards/001' />

@@ -5,6 +5,7 @@ import styles from "./eventId.module.css";
 import { eventData } from "./eventId.data";
 import "react-photo-album/styles.css";
 import { PhotoGallery } from "@/components/photo-gallery/photo-gallery";
+import { Helmet } from "react-helmet";
 
 interface PageProps {
     params: Promise<{
@@ -38,6 +39,9 @@ export default async function ArchiveEventPage({ params }: PageProps) {
 
     return (
         <>
+            <Helmet>
+                <title>{`EVENT ${eventId} | SHELLING.IT`}</title>
+            </Helmet>
             <div className={styles.topContainer}>
                 <PageTitle line1={"EVENT"} line2={eventId} />
                 <div className={styles.recapContainer}>

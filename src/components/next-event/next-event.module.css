@@ -62,7 +62,7 @@
   color: gray;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 585px) {
   .nextEvent {
     flex-direction: row;
   }
