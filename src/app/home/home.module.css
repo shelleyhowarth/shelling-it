@@ -1,6 +1,23 @@
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
 .nextEventContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - 120px);
+  min-height: calc(100vh - 350px);
+}
+
+@media(min-width: 660px) {
+  .logoContainer {
+    display: none;
+  }
+
+  .nextEventContainer {
+    min-height: calc(100vh - 120px);
+  }
 }
