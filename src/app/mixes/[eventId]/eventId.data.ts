@@ -104,7 +104,7 @@ export const mixEventData: MixEvent[] = [
       },
     ],
   },
-    {
+  {
     id: "004",
     videos: [
       {
@@ -135,6 +135,43 @@ export const mixEventData: MixEvent[] = [
         youtubeId: "oQDzrDlPnuY",
         title: "SHELLE.Y || SHELLING.IT 004",
       },
+    ],
+  },
+  {
+    id: "005",
+    videos: [
+      {
+        youtubeId: "2sQr0plUiPY",
+        title: "GIRLFRIEND || SHELLING.IT 005",
+      },
+      {
+        youtubeId: "UAwR40L369o",
+        title: "GR00VY.CAT || SHELLING.IT 005",
+      },
+      {
+        youtubeId: "ohxs73rZDdM",
+        title: "MACY LANCASTER || SHELLING.IT 005",
+      },
+      {
+        youtubeId: "xQvYXRrpT-s",
+        title: "LUNA LAZER || SHELLING.IT 005",
+      },
+      {
+        youtubeId: "yhh2rAIPsMA",
+        title: "SHARAYDA || SHELLING.IT 005",
+      },
+      {
+        youtubeId: "9Wv-L_wrrEs",
+        title: "KAYJA VU || SHELLING.IT 005",
+      },
+      {
+        youtubeId: "oh9Y1T_cXOE",
+        title: "SHELLE.Y || SHELLING.IT 005",
+      },
+      {
+        youtubeId: "ZdG_-VbbBEM",
+        title: "NATHAN EVANS || SHELLING.IT 005",
+      }
     ],
   },
 ];

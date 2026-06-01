@@ -23,4 +23,10 @@ export const eventData = [
     venue: "PICCADILLY CENTRAL, MANCHESTER",
     lineup: ["KACPER PIETA", "EDEN BINKS"],
   },
+    {
+    id: "005",
+    date: "03 MAY 2026",
+    venue: "THE DBA, MANCHESTER",
+    lineup: ["GIRLFRIEND", "KAYJA VU"],
+  },
 ];
