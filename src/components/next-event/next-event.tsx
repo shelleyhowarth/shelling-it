@@ -24,15 +24,22 @@ export const NextEvent = ({ date, venue, headliner, ticketUrl }: NextEventProps)
                 <p className={styles.copy}>{headliner}</p>
                 <p className={styles.info}>+ OTHERS</p>
             </div>
-            <div className={styles.divider} />
-            <div id="col-3" className={styles.ticketsButtonContainer}>
-                <Link href={ticketUrl} target="_blank" rel="noopener noreferrer">
-                    <button className={styles.ticketsButton}>
-                        <span>TICKETS RA</span>
-                        <ArrowUpRight />
-                    </button>
-                </Link>
-            </div>
+            {
+                ticketUrl && (
+                    <>
+                        <div className={styles.divider} />
+                        <div id="col-3" className={styles.ticketsButtonContainer}>
+                            <Link href={ticketUrl} target="_blank" rel="noopener noreferrer">
+                                <button className={styles.ticketsButton}>
+                                    <span>TICKETS RA</span>
+                                    <ArrowUpRight />
+                                </button>
+                            </Link>
+                        </div>
+                    </>
+                )
+            }
+
         </div>
     )
 }
