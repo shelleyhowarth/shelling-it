@@ -42,8 +42,9 @@ export default async function ArchiveEventPage({ params }: PageProps) {
                 <PageTitle line1={"EVENT"} line2={eventId} />
                 <div className={styles.recapContainer}>
                     <EventRecap date={date} venue={venue} lineup={lineup} />
+                    <img src={"https://shelling-it.s3.eu-north-1.amazonaws.com/archive-gallery/005/DSCF0960+copy.webp"}></img>
                 </div>
-            </div>
+            </div >
             <div className={styles.galleryContainer}>
                 <PhotoGallery images={images} />
             </div>
