@@ -11,7 +11,7 @@ export default function Home() {
             </div>
 
             <div className={styles.nextEventContainer}>
-                <NextEvent date={'30 AUGUST 2026'} venue={'YES, MANCHESTER'} headliner={'TBA'} ticketUrl={''} />
+                <NextEvent date={'30 AUGUST 2026'} venue={'YES, MANCHESTER'} headliner={'TBA'} ticketUrl={'https://ra.co/events/2489166'} />
             </div>
         </>
     )
